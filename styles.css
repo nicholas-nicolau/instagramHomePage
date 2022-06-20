@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    font-family:'Open Sans', 'Sans Serif';
+    font-size: 14px;
+    text-decoration: none;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.instagram-wrapper{
+    align-items: center; 
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    width: 100vw;
+}
+
+.image-wrapper{
+    background-image: url("./assets/background/background_image.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    justify-content: end;
+    margin-top: 56px;
+    height: 580px;
+    width: 50%;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-right: calc(50% - 348px);
+    width: 50%;
+    min-width: 348px;
+}
+
+.text-login{
+    align-items: center;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(219,219,219);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.text-login a{
+    color:#2195F6;
+    font-weight: 600;
+}
+
+.store-buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-buttons p{
+    margin: 10px 0px 20px 0px;
+}
+
+.input-text{
+    background-color: rgb(250,250,250);
+    border: 1px solid rgba(219,219,219);
+    font-size: 12px;
+    height: 36px;
+    margin-top: 6px;
+    outline: none;
+    padding-left: 10px;
+    width: 268px;
+}
+
+.singin-button{
+    background-color: rgb(178,223,252);
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-weight: 600;
+    height: 30px;
+    margin: 14px 0px 22px 0px;
+    width: 268px;
+}
+
+.badge{
+    height: 36px;
+    width: 130px;
+}
+
+.sign-in{
+    margin: 22px 0px;
+}
+
+.or-separator{
+    color:rgb(131, 131, 131);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.screenshot{
+    height: 495px;
+    margin-left: -52px;
+    margin-top: 25px;
+    position:absolute
+}
+
+#instagram-logo{
+    height: auto;
+    margin: 46px 0px 42px 0px;
+    width: 175px;
+}
+
+#facebook-logo{
+    height: auto;
+    width: 36px;
+}
+
+#facebook-login-link{
+    align-items: center;
+    color:#385185;
+    display: flex;
+    font-weight: 600;
+    margin: 25px 0px;
+}
+
+#forgot-password-link{
+    align-items: center;
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px){
+    .image-wrapper{
+        display: none;
+    }
+
+    .text-wrapper{
+        padding: 0px;
+    }
+
+    body{
+        align-items: baseline;
+        margin-top: 60px;
+    }
+}
